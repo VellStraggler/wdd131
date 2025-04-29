@@ -2,6 +2,7 @@
     outline: solid 1px #a7a7a7;
     margin: 5%;
     padding: 5%;
+    align-items: center;
 }
 * {
     display: flex;
@@ -15,7 +16,7 @@ li {
 head {
     padding-top: 10%;
 }
-title { 
+h1 { 
     font-size: xx-large;
     align-self: center;
 }
