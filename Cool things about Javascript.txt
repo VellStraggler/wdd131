@@ -1,0 +1,25 @@
+primitives are immutable and non-objects:
+	strings, numbers, Booleans, nulls, Undefineds,
+	Symbols (unique identifiers for object keys),
+	BigInt
+	compared with "===" for value and type
+weakly typed languages:
+	coerces values from one type to another
+	"5" == 5 is true in JS
+function that takes unknown number of args
+    function sumAll(...numbers) {
+	return numbers.reduce((total, num) => total + num, 0);
+    }
+    let sum = sumAll(1, 2, 3, 4);
+Document Object Model (DOM)
+	presents web page as tree-like structure of objects
+	Each element (<div>, <ul>) becomes DOM object
+		you can change.
+    in HTML:
+	<html><body><h1 id="title">Hey World<\h1><...
+    in JS:
+	let heading = document.getElementById("title");
+	heading.textContent = "Cya L8r World";
+Add Element with JS:
+	let a = document.createElement("h1");
+	a.textContent = "Hacker MEssaGe!!";
