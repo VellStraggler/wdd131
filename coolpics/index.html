@@ -8,44 +8,56 @@
     <title>Document</title>
 </head>
 <body>
+    <dialog id="dialogbox">
+        <img src="norris-full.jpeg" alt="Placeholder Image">
+    </dialog>
     <header>
         <h1>Cool Pics 📷</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">People</a>
-            <a href="index.html">Places</a>
-            <a href="index.html">About</a>
-            <a href="index.html">Contact</a>
+        <select class="mobile-nav" onchange=""window.location.href=this.value">>>
+            <option value="index.html">Home</option>
+            <option value="index.html">People</option>
+            <option value="index.html">Places</option>
+            <option value="index.html">About</option>
+            <option value="index.html">Contact</option>
+        </select>
+        <nav class="desktop-nav">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="index.html">People</a>
+                <a href="index.html">Places</a>
+                <a href="index.html">About</a>
+                <a href="index.html">Contact</a>
+            </ul>
         </nav>
     </header>
     <main>
         <h2>Current Work</h2>
         <div class="images">
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
-            <figure>
+            <figure id = "image">
                 <img src="norris-full.jpeg" alt="Placeholder Image">
             </figure>
         </div>
@@ -53,6 +65,5 @@
     <footer>
         <p>©2023 Not a real site 😀</p>
     </footer>
-    
 </body>
 </html>
