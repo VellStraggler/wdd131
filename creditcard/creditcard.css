@@ -1,0 +1,52 @@
+form {
+    max-width: 420px;
+    margin: auto;
+}
+#cardfront, #cardback {
+    background-color: lightgray;
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    padding: 0;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+#cardback {
+    margin-left: 100px;
+    margin-top: 40px;
+    z-index: -1;
+}
+
+div {
+    display:flex;
+    flex-direction: column;
+    padding: 4%
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+input {
+    min-width: 0;
+}
+#code, #datem, #datey {
+    width: 30%;
+}
+#cardnumber {
+    width:90%;
+}
+img, .submit, .cvc{
+    margin-left: auto;
+    margin-right: 0;
+}
+.submit {
+    margin-top: 240px;
+}
+.cvc {
+    margin-right: -100px;
+}
+#blackbar {
+    background-color: black;
+    height: 40px;
+    margin: 20px 0 70px 0;
+}
