@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <script src="recipes.js" defer></script>
+    <link rel="stylesheet" href="recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <meta property="og:title" content="Page Title">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Page Description">
+    <meta property="og:image" content="URL to an image">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/recipe-book.png" alt="Recipe Book">
+        <h1 class="brand-font">RecipeBook</h1>
+    </header>
+
+    <main>
+        <form action="/search" method="GET" class = "search-bar">
+            <input type=""text" name="q" placeholder="Find a recipe">
+            <button type="submit">    
+                <img class="icon" src="images/search.svg">
+            </button>
+        </form>
+        <section class="recipe">
+            <img class="recipe-image" alt="recipe-image" src="images/apple-crisp.jpg">
+            <section class="recipe-text">
+                <h3 class="meal-type">dessert</h3>
+                <h2 class="brand-font">Apple Crisp</h2>
+                <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                >
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="desc">description</p>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon" class="icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" class="icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon" class="icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </footer>
+    
+</body>
+</html>
