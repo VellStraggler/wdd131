@@ -83,7 +83,7 @@ function initWithRandomRecipe() {
 
 // make sure whole page is loaded
 window.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.search-bar').addEventListener('submit', function(event) {
+    document.querySelector('.search-bar').addEventListener('submit', event => {
         event.preventDefault();
         const query = document.getElementById('input').value.trim(); // remove whitespace
         renderRecipes(filterRecipes(query));
