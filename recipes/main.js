@@ -73,17 +73,23 @@ function filterRecipes(query) {
 }
 
 
-function init() {
+function initWithRandomRecipe() {
     // get random recipe
     const recipe = getRandomListEntry(recipes)
     // render the recipe with renderRecipes
     renderRecipes([recipe]);
     console.log(recipe);
 }
-init();
 
-document.querySelector('.search-bar').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const query = document.getElementById('input').value.trim(); // remove whitespace
-    renderRecipes(filterRecipes(query));
-}) 
+// make sure whole page is loaded
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.search-bar').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('input').value.trim(); // remove whitespace
+        renderRecipes(filterRecipes(query));
+    });
+    
+    initWithRandomRecipe();
+})
+
+ 
