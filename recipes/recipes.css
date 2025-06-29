@@ -15,6 +15,11 @@ header {
     padding: 1%;
     width:fit-content;
 }
+div {
+    display:flex;
+    flex-direction: row;
+    gap:4%;
+}
 .recipe-image {
     max-width: 100%;
 }
