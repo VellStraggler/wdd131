@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
-    <script src="recipes.js" defer></script>
+    <script src="./main.js" defer type="module"></script>
+    <!-- <script src="./recipes.mjs" defer type="module"></script> -->
     <link rel="stylesheet" href="recipes.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -23,29 +23,12 @@
 
     <main>
         <form action="/search" method="GET" class = "search-bar">
-            <input type=""text" name="q" placeholder="Find a recipe">
+            <input type="text" id="input" name="q" placeholder="Find a recipe">
             <button type="submit">    
                 <img class="icon" src="images/search.svg">
             </button>
         </form>
-        <section class="recipe">
-            <img class="recipe-image" alt="recipe-image" src="images/apple-crisp.jpg">
-            <section class="recipe-text">
-                <h3 class="meal-type">dessert</h3>
-                <h2 class="brand-font">Apple Crisp</h2>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="desc">description</p>
-            </section>
+        <section id="recipes-list">
 
         </section>
     </main>
