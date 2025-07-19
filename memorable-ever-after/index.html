@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memorable Ever After</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header role="banner">
+        <h1 class="logo">Memorable Ever After</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-note="1" class="first-note" aria-label="Piano note C"></a></li>
+                <li><a href="index.html" data-note="2" class="note" aria-label="Piano note D and Home Page"></a></li>
+                <li><a href="#" data-note="3" class="note" aria-label="Piano note E"></a></li>
+                <li><a href="#weddings" data-note="4" class="note" aria-label="Piano note F and Weddings Page"></a></li>
+                <li><a href="#" data-note="5" class="note" aria-label="Piano note G"></a></li>
+                <li><a href="#writing" data-note="6" class="note" aria-label="Piano note H and Writing Page"></a></li>
+                <li><a href="#" data-note="7" class="note" aria-label="Piano note I"></a></li>
+                <li><a href="contact.html" data-note="8" class="note" aria-label="Piano note J and Contact Page"></a></li>
+            </ul>
+        <img class="black-key-overlay" src="black-key-overlay.png" aria-hidden="true">
+        <button id="togglePiano" aria-pressed="false" aria-label="Toggle piano mode"></button>
+        </nav>
+        <ul class="text-overlay" role="navigation">
+            <li class="ignore-text">Home</li>
+            <li class="ignore-text">Weddings&nbsp;</li>
+            <li class="ignore-text">Writing&nbsp;&nbsp;</li>
+            <li class="ignore-text">Contact&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+    </header>
+
+    <main role="main">
+        <section class="intro">
+        <img src="pro mad photo.jpg" alt="profile of Madison smiling" class="circle">
+        <section>
+            <h2>An Introduction:</h2>
+            <p>You need music for your wedding, I give you more than that; I give you your story. I will write a personalized song for your wedding, completely customized to put your feelings to music. It could be for the couple, Daddy/Daughter, or Mother/Son dance.</p>
+        </section>
+        </section>
+
+        <section class="video-block">
+            <h2>Song written for Saria and Scott Acerson</h2>
+            <div class="video-wrapper">
+                <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.youtube.com/embed/MaZTL7xJFsE" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2>More of My Music</h2>
+            <section class="hblock">
+                <a href="https://open.spotify.com/artist/4AXE3id79pg5fzRtWOA8dN" class="logo-button" id="spotify"></a>
+                <a href="https://madisonevehansen.bandcamp.com/" class="logo-button" id="bandcamp"></a>
+                <a href="https://www.youtube.com/watch?v=tJuC2v7r-D8&list=PLABShVhuXUOn2iQNepfhpDiO4I_SVzi0U" class="logo-button" id="youtube"></a>
+            </section>
+        </section>
+
+        <p>2025 Memorable Ever After©</p>
+    </main>
+</body>
+</html>

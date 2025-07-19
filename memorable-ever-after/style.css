@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, black, black, #177fbf, rgb(152, 200, 255), rgb(227, 240, 255));
+  background-repeat: no-repeat;
+  background-size:auto;
+  min-height: 1200px;
+  color: black;
+}
+
+header {
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 2.5em;
+  margin: 0;
+  align-self: left;
+  justify-self: left;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.first-note {
+    background-image: url('left-note.jpg');
+}
+.note {
+    background-image: url('note.jpg');
+}
+.first-note, .note {
+    display: inline-block;
+    width: 200px;
+    height: 180px;
+    background-size: cover;
+    margin-left: -100px;
+}
+.text-overlay {
+    margin-top: -50px;
+    margin-left: -100px;
+}
+.ignore-text {
+    display: inline-block;
+    justify-content: space-evenly;
+    width: 198px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    pointer-events: none;
+}
+ul {
+   list-style: none;
+}
+
+.black-key-overlay {
+    width: 900px;
+    height: 180px;
+    margin-left: -967px;
+    position:relative;
+    left:70px;
+    margin-top: -3px;
+    pointer-events: none;
+}
+
+#togglePiano {
+  background: gray;
+  color: black;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  transform: translate(30px, 50px);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background-color: aliceblue;
+}
+
+.logo {
+    color:white;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+p {
+    font-size: 18px;
+}
+
+.circle {
+    border-radius: 100px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.hblock {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    text-decoration: none !important;
+    color:black;
+    padding-left: 20px;
+    padding-right:30px;
+}
+
+.video-block {
+    margin-top: 30px;
+    text-align: left;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+}
+
+.logo-button {
+    display: block;
+    background-image: url("spotify-icon-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100px;
+    height: 100px;
+}
+
+#spotify {
+    background-image: url("spotify-icon-2.png");
+}
+
+#bandcamp {
+    background-image: url("bc-logo.png");
+}
+
+#youtube {
+    background-image: url("yt-logo.png");
+}
