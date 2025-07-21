@@ -27,12 +27,12 @@ links.forEach(link => {
             } else {
                 link.style.backgroundImage = "url('note.jpg')";
             }
-        }, 100);
+        }, 200);
 
         // Only play sound and block navigation when piano mode is on
         if (pianoMode) {
             e.preventDefault();
-            const audio = new Audio(`note-${note}.wav`);
+            const audio = new Audio(`notes/note-${note}.wav`);
             audio.play();
         }
     });
